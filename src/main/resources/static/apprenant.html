@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<title>Gestion des notes</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+</head>
+<body ng-app="myApp" ng-controller="StudentController">
+<div class="col-md-6 col-sm-6 col-xs-12 spacer">
+	<div class="panel panel-info">
+		<div class="panel panel-heading">Ajout d'un nouvel apprenant</div>
+		<div class="panel-body">
+		<form>
+			<div class="form-group">
+			<label class="control-label">Nom:</label>
+			<input type="text" class="form-control" placeholder="Entrer le nom" ng-model="apprenant.nom">
+			<span class="error"></span>
+			</div>
+			<div class="form-group">
+			<label class="control-label">Pr&#233;nom:</label>
+			<input type="text" class="form-control" placeholder="Entrer le pr&#233;nom" ng-model="apprenant.prenom">
+			<span class="error"></span>
+			</div>
+			<div class="form-group">
+			<label class="control-label">Matricule:</label>
+			<input type="text" class="form-control" placeholder="Entrer le matricule" ng-model="apprenant.matricule">
+			<span class="error"></span>
+			</div>
+			<div class="form-group">
+			<label class="control-label">Photo:</label>
+			<input type="text" class="form-control" placeholder="Photo" ng-model="apprenant.photo">
+			</div>
+			<button class="btn btn-primary" ng-click="saveApprenant()">Enregistrer</button>
+  		</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/myApp.js"></script>
+</body>
+</html>
